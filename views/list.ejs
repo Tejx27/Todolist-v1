@@ -12,6 +12,9 @@
       <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
       <p><%=item.name%></p>
       <p><%= item.time %></p>
+      <p><% if(item.time && item.time2){ %>
+        <span>to</span>
+     <% } %></p>
       <p><%= item.time2%></p>
 
     </div>
